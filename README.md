@@ -11,11 +11,15 @@ git clone https://github.com/CosmicFurball/python-cronjob.git
 ```
 cd python-cronjob
 ```
+2. Add execution permission
+```
+chmod +x python_job/entrypoint.sh
+```
 2. Start docker compose 
 ```
 docker-compose up -d
 ```
-3. Check the logs. This should print the timestamp every minute.
+3. Check logs. This should print timestamp every minute.
 ```
 docker-compose logs -f
 ```
