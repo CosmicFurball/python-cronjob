@@ -1,6 +1,6 @@
 # python-cronjob
 
-Run python script periodically / Attach python docker with cron job to your project with docker-compose.
+Run python script periodically / Attach python docker with cron job to your project using docker-compose.
 
 ## Getting Started
 
