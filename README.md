@@ -15,7 +15,7 @@ cd python-cronjob
 ```
 docker-compose up -d
 ```
-3. Check logs. This should print timestamp every minute.
+3. Check logs. This should print all scheduled cron jobs and the logs of the scripts. (The sample code contains a script printing timestamp every minute.)
 ```
 docker-compose logs -f
 ```
