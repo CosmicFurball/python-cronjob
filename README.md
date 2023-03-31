@@ -11,10 +11,6 @@ git clone https://github.com/CosmicFurball/python-cronjob.git
 ```
 cd python-cronjob
 ```
-2. Add execution permission
-```
-chmod +x python_job/entrypoint.sh
-```
 2. Start docker compose 
 ```
 docker-compose up -d
@@ -31,7 +27,24 @@ docker-compose down
 ```
 
 ## Usage
+### Package Installation
+* To install new python packages, add packages to [python_job/requirements.txt](https://github.com/CosmicFurball/python-cronjob/blob/main/python_job/requirements.txt)
+* Rebuild docker to apply changes
+```
+docker-compose down
+```
+```
+docker-compose build job
+```
+```
+docker-compose up -d
+```
+
+### Script and Interval Modification
 * To run your own python scripts, add .py file to [python_job/scripts](https://github.com/CosmicFurball/python-cronjob/tree/main/python_job/scripts)
-* To install python packages, add packages to [python_job/requirements.txt](https://github.com/CosmicFurball/python-cronjob/blob/main/python_job/requirements.txt)
 * To modify the execution interval of each script, update [python_job/crontab](https://github.com/CosmicFurball/python-cronjob/blob/main/python_job/crontab)
 * To learn how to setup execution interval, please refer to [crontab.guru](https://crontab.guru/)
+* Restart docker to apply changes
+```
+docker-compose restart job
+```
