@@ -4,7 +4,7 @@ services:
     build:
       context: python_job/
     volumes:
-      - ./python_job/:/app/
+      - ./python_job/scripts/:/app/scripts/
     restart: always
     container_name: python-cronjob
     command: /app/entrypoint.sh
