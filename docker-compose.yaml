@@ -1,0 +1,10 @@
+version: '3'
+services:
+  job:
+    build:
+      context: python_job/
+    volumes:
+      - ./python_job/:/app/
+    restart: always
+    container_name: python-cronjob
+    command: /app/entrypoint.sh
