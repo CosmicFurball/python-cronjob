@@ -19,7 +19,7 @@ docker-compose up -d
 ```
 docker-compose logs -f
 ```
-![image](https://user-images.githubusercontent.com/123827408/229036224-4a188c25-63bc-477d-8464-4408cbf1d70b.png)
+![image](https://user-images.githubusercontent.com/123827408/229039283-07feb19f-ee5a-4a02-bae1-13c00747c1e3.png)
 
 4. Stop docker compose
 ```
