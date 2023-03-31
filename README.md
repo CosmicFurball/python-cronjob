@@ -28,5 +28,6 @@ docker-compose down
 
 ## Usage
 * To run your own python scripts, add .py file to [python_job/scripts](https://github.com/CosmicFurball/python-cronjob/tree/main/python_job/scripts)
+* To install python packages, add packages to [python_job/requirements.txt](https://github.com/CosmicFurball/python-cronjob/blob/main/python_job/requirements.txt)
 * To modify the execution interval of each script, update [python_job/crontab](https://github.com/CosmicFurball/python-cronjob/blob/main/python_job/crontab)
 * To learn how to setup execution interval, please refer to [crontab.guru](https://crontab.guru/)
