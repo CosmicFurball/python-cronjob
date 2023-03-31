@@ -5,6 +5,7 @@ services:
       context: python_job/
     volumes:
       - ./python_job/scripts/:/app/scripts/
+      - ./python_job/crontab:/app/crontab
     restart: always
     container_name: python-cronjob
     command: /app/entrypoint.sh
